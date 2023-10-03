@@ -1,0 +1,15 @@
+.countArea {
+  width: 25vh;
+  height: 71vh;
+  overflow: scroll;
+  max-height: 71vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px
+}
+
+.textAreaClass {
+  height: 70vh;
+  width: 75vh;
+}

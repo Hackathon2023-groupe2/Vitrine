@@ -4,23 +4,26 @@ function compterLignes() {
     console.error("Textarea non trouvé");
     return 0;
   }
+
   const contenu = textarea.value;
   const lignes = contenu.split("\n");
-  console.log(lignes.length);
   return lignes.length;
 }
 
-
-
 const textarea = document.getElementById('textareaId');
-textarea.addEventListener("input", e=>{
-    const test = document.getElementById('print')
-    test.innerHTML= ""
-    for (var i = 0; i < compterLignes(); i++) {
-       let p = document.createElement("div")
-       p.innerHTML=i 
-       test.appendChild(p)
+const countArea = document.getElementById('countArea');
 
-      }
-      
-})
+textarea.addEventListener("input", (e) => {
+  countArea.innerHTML = "";
+
+  for (var i = 0; i < compterLignes(); i++) {
+    let p = document.createElement("div");
+    p.innerHTML = i + 1;
+    countArea.appendChild(p);
+  }
+});
+
+textarea.addEventListener("scroll", () => {
+  countArea.scrollTop = textarea.scrollTop;
+  console.log("Scroll", countArea.scrollTop, textarea.scrollTop);
+});

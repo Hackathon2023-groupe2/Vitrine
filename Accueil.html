@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Musique</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,17 +27,17 @@
     <div class="row"> 
       <div class="col-sm-12" >
         <br>
-        <form >
+        <form>
           <div class="row" >   
-          <div class="col-sm-1">
-            <textarea  class="form-control" id="print" style="resize: none;" rows="20" readonly></textarea><br>
-            </div>
-            <div class="col-sm-11">          
-              <textarea placeholder="start typing" class="form-control" id="textareaId" style="resize: none;" rows="20"></textarea><br>
-              <button type="button" class="btn btn-secondary">Run</button>
-              <button type="button" class="btn btn-primary">Telecharger</button>
-            </div>
+          <div class="col-sm-1 countArea" id="countArea">
+            <div class="form-control" id="print"></div><br>
+          </div>
+          <div class="col-sm-11">         
+            <textarea placeholder="start typing" class="textAreaClass" id="textareaId" style="resize: none;" rows="20"></textarea><br>
+          </div>
           </div>  
+          <button type="submit" class="btn btn-secondary">Run</button>
+          <button type="submit" class="btn btn-primary">Telecharger</button>
         </form>
       </div>
   </div>
