@@ -10,27 +10,8 @@ function compterLignes() {
   return lignes.length;
 }
 
-
-
 const textarea = document.getElementById('textareaId');
 const countArea = document.getElementById('countArea');
-
-textarea.addEventListener('mousedown', function() {
-    updateCursorPosition();
-});
-
-textarea.addEventListener('mousemove', function() {
-    updateCursorPosition();
-});
-
-function updateCursorPosition() {
-    var cursorPosition = textarea.selectionStart;
-    var text = textarea.value;
-    var lines = text.split('\n');
-    var lineNumber = text.substr(0, cursorPosition).split('\n').length;
-    console.log('Numéro de ligne du curseur : ' + lineNumber);
-}
-
 
 textarea.addEventListener("input", (e) => {
   countArea.innerHTML = "";
@@ -41,7 +22,6 @@ textarea.addEventListener("input", (e) => {
     p.classList.add('flexBox')
     countArea.appendChild(p);
   }
-  updateCursorPosition();
 });
 
 textarea.addEventListener("scroll", () => {

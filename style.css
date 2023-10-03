@@ -1,8 +1,18 @@
-.countArea {
-  width: 5vh;
-  height: 70vh;
-  overflow: scroll;
-  background-color: #d6d6dc;
+/* Main Style */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+  resize: none;
+  font-size: 2.2vh;
 }
 
 ::-webkit-scrollbar {
@@ -10,20 +20,178 @@
   height: 0px;
 }
 
-.textAreaClass {
-  height: 70vh;
-  width: 75vh;
+button {
   outline: none;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-left: 0px solid black;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
+  padding: .9vh 1.8vh .9vh 1.8vh;
+  font-size: 2.2vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .flexBox {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Class Style */
+.navBarContainer {
+  display: flex;
+  width: auto;
+  height: 7vh;
+  align-items: center;
+  justify-content: start;
+  padding: 0 0 0 2vh;
+  background-color: rgb(237, 237, 237);
+  margin-bottom: 4vh;
+  font-size: 2.4vh;
+  gap: 5rem;
+}
+
+.titleNavBar {
+  font-size: 2.6vh;
+  font-weight: bold;
+}
+
+.navBarComponent {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 1vh;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  gap: 2vh;
+}
+
+.rightSide {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.ideContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: end;
+}
+
+.containerButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.countArea {
+  width: 14.5%;
+  height: 71.5vh;
+  overflow: scroll;
+  padding-top: .4vh;
+  border-top: 1.6px solid rgb(105, 105, 105);
+  border-right: 0px solid rgb(105, 105, 105);
+  border-bottom: 1.6px solid rgb(105, 105, 105);
+  border-left: 1.6px solid rgb(105, 105, 105);
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  background-color: #e1e1e1;
+}
+
+.textAreaContainer {
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.ide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.textAreaClass {
+  width: 250%;
+  height: 70.5vh;
+  outline: none;
+  padding: .4vh 1vh 1vh 1vh;
+  border-top: 1.6px solid rgb(105, 105, 105);
+  border-right: 1.6px solid rgb(105, 105, 105);
+  border-bottom: 1.6px solid rgb(105, 105, 105);
+  border-left: 0px solid rgb(105, 105, 105);
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.runButton {
+  background-color: rgb(98, 241, 96);
+  border: none;
+  color: black;
+  border: 2px solid transparent;
+}
+
+.runButton:focus {
+  border-color: rgb(80, 183, 79);
+
+}
+
+.downloadButton {
+  background-color: rgb(96, 96, 241);
+  border: 2px solid transparent;
+  color: white;
+}
+
+.downloadButton:focus {
+  border-color: rgb(55, 55, 177);
+  color: white;
+}
+
+.titleDocs {
+  font-size: 3vh;
+  text-decoration: underline;
+}
+
+.docContainer {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+/* About */
+.aboutContainer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutArea {
+  width: 50%;
+  height: auto;
 }
