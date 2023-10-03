@@ -1,15 +1,29 @@
 .countArea {
-  width: 25vh;
-  height: 71vh;
+  width: 5vh;
+  height: 70vh;
   overflow: scroll;
-  max-height: 71vh;
+  background-color: #d6d6dc;
 }
 
 ::-webkit-scrollbar {
-  width: 0px
+  width: 0px;
+  height: 0px;
 }
 
 .textAreaClass {
   height: 70vh;
   width: 75vh;
+  outline: none;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 0px solid black;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
