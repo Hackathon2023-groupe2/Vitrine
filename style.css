@@ -118,6 +118,7 @@ a {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   background-color: #e1e1e1;
+  font-size: 2.2vh;
 }
 
 .textAreaContainer {
@@ -197,7 +198,6 @@ a {
   height: auto;
 }
 
-<<<<<<< HEAD
 /* Error */
 .containerError {
   width: 100%;
@@ -206,7 +206,7 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-=======
+}
 /*  profils */
 .div-gallerie {
 	height: 20vw;
@@ -219,5 +219,7 @@ a {
 .profilsImg{
   border-radius: 50%;
   width: 70%;
->>>>>>> 92178b2f9846e89311a53aa4612f87e45e82f6d8
+}
+.SonButton{
+  margin: 5%;
 }

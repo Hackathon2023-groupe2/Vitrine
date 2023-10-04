@@ -39,3 +39,23 @@ countArea.addEventListener("scroll", () => {
   textarea.scrollTop = countArea.scrollTop;
   console.log("Scroll", countArea.scrollTop, textarea.scrollTop);
 });
+
+function ajouterCaractere(Valeur) {
+  var maValeur = Valeur
+  var textarea = document.getElementById("textareaId");
+  textarea.value += maValeur;
+}
+function SupCaractere() {
+ // Récupérer le contenu de la zone de texte
+ var textArea = document.getElementById("textareaId");
+ var texte = textArea.value;
+
+ // Vérifier si la zone de texte n'est pas vide
+ if (texte.length > 0) {
+     // Supprimer le dernier caractère
+     texte = texte.substring(0, texte.length - 1);
+
+     // Mettre à jour le contenu de la zone de texte
+     textArea.value = texte;
+ }
+}

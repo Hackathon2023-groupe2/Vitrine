@@ -33,7 +33,7 @@
             </div>
   
             <!-- TextArea -->
-            <textarea placeholder="Start typing your music" class="textAreaClass" id="textareaId"></textarea>
+            <textarea  placeholder="Start typing your music" class="textAreaClass" id="textareaId"></textarea>
           </div>
             <!-- Container Button -->
             <div class="containerButton">
@@ -52,13 +52,11 @@
       <div class="docContainer">
         <p class="flexBox">"Tempo 'number'"</p>
         <p class="flexBox">"Pause 'number s'"</p>
-        <p class="flexBox">"A" : Do</p>
-        <p class="flexBox">"B" : Ré</p>
-        <p class="flexBox">"C" : Mi</p>
-        <p class="flexBox">"D" : Fa</p>
-        <p class="flexBox">"E" : Sol</p>
-        <p class="flexBox">"F" : La</p>
-        <p class="flexBox">"F" : Si</p>
+        <p class="flexBox"><button class="SonButton" onclick="ajouterCaractere('A')">"A" : Do</button> <button class="SonButton"onclick="ajouterCaractere('B')">"B" : Ré</button></p>
+        <p class="flexBox"><button class="SonButton" onclick="ajouterCaractere('C')">"C" : Mi</button><button class="SonButton" onclick="ajouterCaractere('D')">"D" : Fa</button></p>
+        <p class="flexBox"><button class="SonButton" onclick="ajouterCaractere('E')">"E" : Sol</button><button class="SonButton" onclick="ajouterCaractere('F')">"F" : La</button></p>
+        <p class="flexBox"><button class="SonButton" onclick="ajouterCaractere('G')">"G" : Si</button></p>
+        <p class="flexBox"><button class="SonButton" onclick="SupCaractere()">Supprimer</button></p>
       </div>
     </div>
   </div>
