@@ -1,3 +1,7 @@
+/**
+ * Line count
+ * @returns 
+ */
 function compterLignes() {
   const textarea = document.getElementById('textareaId');
   if (!textarea) {
@@ -13,6 +17,7 @@ function compterLignes() {
 const textarea = document.getElementById('textareaId');
 const countArea = document.getElementById('countArea');
 
+// Event for each input in the textarea
 textarea.addEventListener("input", (e) => {
   countArea.innerHTML = "";
 
@@ -24,6 +29,7 @@ textarea.addEventListener("input", (e) => {
   }
 });
 
+// Sync count line & textarea
 textarea.addEventListener("scroll", () => {
   countArea.scrollTop = textarea.scrollTop;
   console.log("Scroll", countArea.scrollTop, textarea.scrollTop);
