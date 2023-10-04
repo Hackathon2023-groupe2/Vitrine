@@ -189,9 +189,25 @@ a {
   height: auto;
   align-items: center;
   justify-content: center;
+
 }
 
 .aboutArea {
   width: 50%;
   height: auto;
+}
+
+/*  profils */
+
+.div-gallerie {
+
+	height: 30vw;
+	width: 30%;
+	min-width: 50px;
+	display: inline-block;
+	margin-top: 10%;
+}
+.profilsImg{
+  border-radius: 50%;
+  width: 70%;
 }
