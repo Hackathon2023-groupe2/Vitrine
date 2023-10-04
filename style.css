@@ -223,3 +223,11 @@ a {
 .SonButton{
   margin: 5%;
 }
+
+@media screen and (max-width: 500px) {
+  .div-gallerie {
+    width: 30%;
+    font-size: 10px;
+    margin-inline: 10px;
+  }
+}
