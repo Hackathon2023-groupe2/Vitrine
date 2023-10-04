@@ -198,15 +198,14 @@ a {
 }
 
 /*  profils */
-
 .div-gallerie {
-
-	height: 30vw;
+	height: 20vw;
 	width: 30%;
 	min-width: 50px;
 	display: inline-block;
 	margin-top: 10%;
 }
+
 .profilsImg{
   border-radius: 50%;
   width: 70%;
