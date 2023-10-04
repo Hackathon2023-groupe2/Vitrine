@@ -5,25 +5,26 @@ var path = require('path');
 const PORT = 8000;
 
 /**
- * Create server
+ * Create Server
  */
 http.createServer(function(request, response) {
   var filePath = '.' + request.url;
   var contentType = 'text/html';
 
-  // Manage path
+  // Gestion des différentes routes
   if (filePath === './' || filePath === './home.html') {
     filePath = './home.html';
   } else if (filePath.endsWith('.css')) {
     contentType = 'text/css';
   } else if (filePath === './about.html') {
     filePath = './about.html';
+  } else if (filePath.endsWith('.js')) {
+    contentType = 'text/javascript';
   } else {
     serve404(response);
     return;
   }
 
-  // ReadFile
   fs.readFile(filePath, function(error, content) {
     if (error) {
       if (error.code == 'ENOENT') {
@@ -42,7 +43,7 @@ http.createServer(function(request, response) {
 console.log('Serveur en cours d\'exécution sur le port ' + PORT);
 
 /**
- * Manage path error
+ * Function manage 404
  * @param {*} response 
  */
 function serve404(response) {
