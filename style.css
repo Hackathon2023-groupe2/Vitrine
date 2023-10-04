@@ -189,6 +189,7 @@ a {
   height: auto;
   align-items: center;
   justify-content: center;
+
 }
 
 .aboutArea {
@@ -196,6 +197,7 @@ a {
   height: auto;
 }
 
+<<<<<<< HEAD
 /* Error */
 .containerError {
   width: 100%;
@@ -204,4 +206,18 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
+=======
+/*  profils */
+.div-gallerie {
+	height: 20vw;
+	width: 30%;
+	min-width: 50px;
+	display: inline-block;
+	margin-top: 10%;
+}
+
+.profilsImg{
+  border-radius: 50%;
+  width: 70%;
+>>>>>>> 92178b2f9846e89311a53aa4612f87e45e82f6d8
 }
