@@ -180,7 +180,10 @@ a {
 
 .docContainer {
   display: flex;
+  width: auto;
+  height: auto;
   flex-direction: column;
+  gap: 5vh;
 }
 
 /* About */
@@ -220,7 +223,16 @@ a {
   border-radius: 50%;
   width: 70%;
 }
-.SonButton{
-  margin: 5%;
+
+.flexBoxBtnDocs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3%
 }
 
+.SonButton {
+  font-size: 1.2vw;
+  height: auto;
+  text-wrap:nowrap;
+}
