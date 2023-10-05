@@ -11,16 +11,22 @@ http.createServer(function(request, response) {
   var filePath = '.' + request.url;
   var contentType = 'text/html';
 
+  
   // Gestion des différentes routes
   if (filePath === './' || filePath === './home.html') {
     filePath = './home.html';
   } else if (filePath.endsWith('.css')) {
     contentType = 'text/css';
+  } else if (filePath.endsWith('.mp3')) {
+      contentType = 'audio/mp3';
   } else if (filePath === './about.html') {
     filePath = './about.html';
   } else if (filePath.endsWith('.js')) {
     contentType = 'text/javascript';
-  } else {
+  }else if (filePath.endsWith('.js')) {
+    contentType = 'text/javascript';
+  }
+  else {
     serve404(response);
     return;
   }
