@@ -15,7 +15,7 @@ function compterLignes() {
   return lignes.length;
 }
 
-const textarea = document.getElementById("textareaId");
+const textarea = document.getElementById("textareaId")
 const countArea = document.getElementById("countArea");
 const Run = document.getElementById("run");
 const tempo = document.getElementById("tempo");
@@ -53,6 +53,7 @@ function ajouterCaractere(Valeur) {
   var textarea = document.getElementById("textareaId");
   textarea.value += maValeur;
   limitCharacters(textarea);
+  textarea.focus()
 }
 
 function SupCaractere() {
@@ -67,6 +68,7 @@ function SupCaractere() {
 
 function limitCharacters(ValeurTexte) {
   const lines = ValeurTexte.value.split("\n");
+
   for (let i = 0; i < lines.length; i++) {
     if (lines[i].length > 20) {
       lines[i] = lines[i].substring(0, 20);
@@ -76,57 +78,8 @@ function limitCharacters(ValeurTexte) {
   textarea.value = lines.join("\n");
 }
 
-function delay(n) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, n * 1000);
-  });
-}
 
-async function myAsyncFunction() {
-  for (let i = 0; i < textarea.value.length; i++) {
-    switch (textarea.value[i]) {
-      
-      case "A" || "a":
-        play("A")
-        await delay(tempo.value);
-        break;
-      case "B":
-        play("B")
-        await delay(tempo.value);
-        break;
-      case "C":
-        play("C")
-        await delay(tempo.value);
-        break;
-      case "D":
-        play("D")
-        await delay(tempo.value);
-        break;
-      case "E":
-        play("E")
-        await delay(tempo.value);
-        break;
-      case "F":
-        play("F")
-        await delay(tempo.value);
-        break;
-      case "G":
-        play("G")
-        await delay(tempo.value);
-        break;
-      default:
-        await delay(tempo.value);
-        break;
-    }
-  }
-}
 
-function play(ValeurTexte) {
-  if (ValeurTexte == ValeurTexte.toLowerCase()) {
-    var audio = new Audio("audio/"+ValeurTexte+".mp3");
-   }
-   else{
-    var audio = new Audio("audio/"+ValeurTexte+".mp3");
-   }
-  audio.play();
+function Telecharger() {
+  alert('non ça marchera quand j\'ai envie');
 } 

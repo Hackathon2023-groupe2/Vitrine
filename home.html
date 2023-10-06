@@ -32,12 +32,12 @@
             </div>
   
             <!-- TextArea -->
-            <textarea  oninput="limitCharacters(this)" placeholder="Start typing your music" class="textAreaClass" id="textareaId"></textarea>
+            <textarea   oninput="limitCharacters(this)" placeholder="Start typing your music" class="textAreaClass" id="textareaId"></textarea>
           </div>
             <!-- Container Button -->
             <div class="containerButton">
               <button class="runButton" id="run">Run</button>
-              <button  class="downloadButton">Telecharger</button>
+              <button  class="downloadButton" onclick="Telecharger()">Telecharger</button>
             </div>
         </div>
       </div>
@@ -51,25 +51,17 @@
       <div class="docContainer">
         <!-- Input -->
         <div class="flexBoxBtnDocs">
-          <input placeholder="choisie le tempo en s" class="InputTempo" id="tempo"></input>
-        </div>
-        <div class="flexBoxBtnDocs">"Pause 'number s'"</div>
-        <div class="flexBoxBtnDocs">
-          <button class="SonButton" onclick="ajouterCaractere('A')">"A" : Do</button>
-          <button class="SonButton" onclick="ajouterCaractere('B')">"B" : Ré</button>
-          <button class="SonButton" onclick="ajouterCaractere('C')">"C" : Mi</button>
+          <!-- <input placeholder="choisie le tempo en s" class="InputTempo" id="tempo"></input> -->
         </div>
         <div class="flexBoxBtnDocs">
-          <button class="SonButton" onclick="ajouterCaractere('D')">"D" : Fa</button>
-          <button class="SonButton" onclick="ajouterCaractere('E')">"E" : Sol</button>
-          <button class="SonButton" onclick="ajouterCaractere('F')">"F" : La</button>
+          <button class="SonButton" onclick="ajouterCaractere('PLAY ')">PLAY</button>
+          <button class="SonButton" onclick="ajouterCaractere('TEMPO ')">TEMPO</button>
+          <button class="SonButton" onclick="ajouterCaractere('SONG ')">SONG</button>
         </div>
         <div class="flexBoxBtnDocs">
-          <button class="SonButton" onclick="ajouterCaractere('G')">"G" : Si</button>
-          <button class="SonButton" onclick="ajouterCaractere(' ')">Espace</button>
-        </div>
-        <div class="flexBoxBtnDocs">
-          <button class="SonButton" onclick="SupCaractere()">Supprimer</button>
+          <button class="SonButton" onclick="ajouterCaractere('TEMPS ')">TEMPS</button>
+          <!-- <button class="SonButton" onclick="ajouterCaractere(' ')">Espace</button> -->
+          <button class="SonButton" style="background-color: rgb(183, 74, 74);color: azure; " onclick="SupCaractere()">Supprimer</button>
         </div>
       </div>
     </div>

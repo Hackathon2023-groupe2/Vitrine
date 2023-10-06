@@ -107,7 +107,7 @@ a {
 }
 
 .countArea {
-  width: 14.5%;
+  width: 17.5%;
   height: 71.5vh;
   overflow: scroll;
   padding-top: .4vh;
@@ -235,4 +235,31 @@ a {
   font-size: 1.2vw;
   height: auto;
   text-wrap:nowrap;
+}
+@media screen and (max-width: 600px) {
+.container{
+  display: block;
+  margin: 50px 0;
+}
+.ideContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.leftSide{
+  width: 100%;
+}
+
+.rightSide{
+  width: 100%;
+  margin: 50px 0;
+}
+.SonButton {
+  font-size: 2.2vw;
+
+}
+
+.countArea {
+  width: 27.5%;
+}
 }
